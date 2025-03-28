@@ -1,2 +1,2 @@
-rootProject.name = "SQLiteCommon"
+rootProject.name = "sqlite-common"
 
