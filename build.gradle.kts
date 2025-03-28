@@ -2,6 +2,10 @@ plugins {
     kotlin("jvm") version "1.8.0"
 }
 
+kotlin {
+    jvmToolchain(17)
+}
+
 group = "org.tera201"
 version = "1.0"
 
@@ -16,7 +20,4 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(19)
 }
