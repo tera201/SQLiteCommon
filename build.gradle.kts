@@ -1,9 +1,16 @@
 plugins {
     kotlin("jvm") version "1.8.0"
+    `maven-publish`
 }
 
 kotlin {
     jvmToolchain(17)
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
 }
 
 group = "org.tera201"
